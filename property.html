@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+    <link rel="stylesheet" href="property.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="house-icon.png" alt="Dylan Estate">
+            <span>Dylan Estate</span>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul class="nav-list">
+                    <div><a href="#">PROPERTIES</a></div>
+                    <div><a href="#">MY DASHBOARD/ACTIVITY</a></div>
+                    <div><a href="#">LIST YOUR PROPERTY</a></div>
+                    <div><a href="#">CONTACT US</a></div>
+                    <div><a href="#">MORE</a></div>
+                </ul>
+            </nav>
+            <div>|</div>
+            <div class="user-actions">
+                <a href="#" class="language-icon">🌐</a>
+                <a href="#" class="user-icon">👤</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-details">
+        <div class="form-container">
+            <div class="form-heading">
+                <div class="property-details">
+                    <ul class="list">
+                        <ul id="step-0">Property Details</ul>
+                        <ul id="step-1">Location Details</ul>
+                        <ul id="step-2">Features & Amenities</ul>
+                        <ul id="step-3">Price Details</ul>
+                        <ul id="step-4">Property Images</ul>
+                    </ul>
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+            <div class="slider" id="slider">
+                <div class="section active">
+                    <div class="content">
+                        <div class="property-content">
+                            <form>
+                                <div class="form-detail">
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Property For :</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="owner" name="userType" checked>
+                                                <label for="owner">Rent</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="builder">Sale</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Property Type :</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="owner" name="userType" checked>
+                                                <label for="owner">Residential</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="builder">Commercial</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="builder">Land / Plot</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row-form-group">
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Built up Area <span class="required">*</span></h2>
+                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                        </div>
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Carpet Area <span class="required">*</span></h2>
+                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                        </div>
+                                    </div>
+                                    <div class="row-form-group">
+                                        <div class="row-form-group" style="width: 380px;">
+                                            <div class="form-group" style="width: 170px;">
+                                                <h2>Property on Floor <span class="required">*</span></h2>
+                                                <input type="text" id="name" name="name" value="Celeste" required>
+                                            </div>
+                                            <div class="form-group" style="width: 170px;">
+                                                <h2>Total Floors <span class="required">*</span></h2>
+                                                <input type="text" id="name" name="name" value="Celeste" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Property Facing <span class="required">*</span></h2>
+                                            <select id="direction" name="direction">
+                                                <option value="">Select</option>
+                                                <option value="N">North</option>
+                                                <option value="E">East</option>
+                                                <option value="W">West</option>
+                                                <option value="S">South</option>
+                                                <option value="NE">North-East</option>
+                                                <option value="NW">North-West</option>
+                                                <option value="SE">South-East</option>
+                                                <option value="SW">South-West</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>Property Age <span class="required">*</span></h2>
+                                        <div class="options-container">
+                                            <button type="button" class="option">Less than 1 Year</button>
+                                            <button type="button" class="option">1- 3 Years</button>
+                                            <button type="button" class="option">3- 5 Years</button>
+                                            <button type="button" class="option">5 - 10 Years</button>
+                                            <button type="button" class="option">Greater than 10 Years</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>BHK Type <span class="required">*</span></h2>
+                                        <div class="options-container">
+                                            <button type="button" class="option">1 RK</button>
+                                            <button type="button" class="option">1 BHK</button>
+                                            <button type="button" class="option">2 BHK</button>
+                                            <button type="button" class="option">3 BHK</button>
+                                            <button type="button" class="option">4 BHK</button>
+                                            <button type="button" class="option">5+ BHK</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>Bathrooms/ Toilets <span class="required">*</span></h2>
+                                        <div class="options-container">
+                                            <button type="button" class="option">1</button>
+                                            <button type="button" class="option">2</button>
+                                            <button type="button" class="option">3</button>
+                                            <button type="button" class="option">4</button>
+                                            <button type="button" class="option">5</button>
+                                            <button type="button" class="option">6+</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>Balcony <span class="required">*</span></h2>
+                                        <div class="options-container">
+                                            <button type="button" class="option">Less than 1 Year</button>
+                                            <button type="button" class="option">1- 3 Years</button>
+                                            <button type="button" class="option">3- 5 Years</button>
+                                            <button type="button" class="option">5 - 10 Years</button>
+                                            <button type="button" class="option">Greater than 10 Years</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>Tenant Preference <span class="required">*</span></h2>
+                                        <div class="options-container">
+                                            <button type="button" class="option">1 RK</button>
+                                            <button type="button" class="option">1 BHK</button>
+                                            <button type="button" class="option">2 BHK</button>
+                                            <button type="button" class="option">3 BHK</button>
+                                            <button type="button" class="option">4 BHK</button>
+                                            <button type="button" class="option">5+ BHK</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>Availability <span class="required">*</span></h2>
+                                        <div class="options-container">
+                                            <button type="button" class="option">1</button>
+                                            <button type="button" class="option">2</button>
+                                            <button type="button" class="option">3</button>
+                                            <button type="button" class="option">4</button>
+                                            <button type="button" class="option">5</button>
+                                            <button type="button" class="option">6+</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding-bottom: 30px;">
+                                        <h2>Property Description <span class="required">*</span></h2>
+                                        <input type="message" id="description" name="message" value=""
+                                            placeholder="Describe your property...." required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-details">
+                            Need Help? Call 9999999999
+                            <button type="button" onclick="nextSection()">NEXT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="content">
+                        <div class="property-details">
+                            <form>
+                                <div class="form-detail">
+                                    <div class="row-form-group">
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Building / Society Name <span class="required">*</span></h2>
+                                            <select id="direction" name="direction">
+                                                <option value="">Gokul Village Chs 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Locality / Area <span class="required">*</span></h2>
+                                            <select id="direction" name="direction">
+                                                <option value="">Shanti Park, Miraroad east</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row-form-group">
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Landmark / Street Name</h2>
+                                            <select id="direction" name="direction">
+                                                <option value="">Prominent Landmark</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>City</h2>
+                                            <select id="direction" name="direction">
+                                                <option value="">Mumbai, Maharashtra</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding-bottom: 30px;">
+                                        <h2>Mark Locality on Map</h2>
+                                        <img width="900px" src="./img/map_1.png" alt="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-details">
+                            Need Help? Call 9999999999
+                            <button type="button" onclick="nextSection()">NEXT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="content">
+                        <div class="property-details">
+                            <form>
+                                <div class="form-detail">
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Non-Veg</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="owner" name="userType" checked>
+                                                <label for="allowed">Allowed</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="notallowed">Not Allowed</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Pets Allowed</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="owner" name="userType" checked>
+                                                <label for="yes">Yes</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="no">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Electricity</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="owner" name="userType" checked>
+                                                <label for="rare">Rare/No Powercut</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="frequent">Frequent Powercut</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Water Supply</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="owner" name="userType" checked>
+                                                <label for="bmc">Municipal Corporation (BMC)</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="borewell">Borewell</label>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="radio" id="builder" name="userType">
+                                                <label for="both">Both</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Furnishing</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="fully" name="fully" value="Bike">
+                                                <label for="fully"> Fully Furnished</label><br>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="semi" name="semi" value="Bike">
+                                                <label for="semi"> Semi Furnished</label><br>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="unfurnished" name="unfurnished" value="Bike">
+                                                <label for="unfurnished"> Unfurnished</label><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Additional Features</h2>
+                                        <div class="form-group" style="row-gap: 20px; padding-top: 0;">
+                                            <div class="radio-group">
+                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                    <input type="checkbox" id="ac" name="ac" value="Bike">
+                                                    <label for="ac"> Air Conditioning</label><br>
+                                                </div>
+                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                    <input type="checkbox" id="fans" name="fans" value="Bike">
+                                                    <label for="fans"> Ceiling Fans</label><br>
+                                                </div>
+                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                    <input type="checkbox" id="refrigerator" name="refrigerator"
+                                                        value="Bike">
+                                                    <label for="refrigerator"> Refrigerator</label><br>
+                                                </div>
+                                            </div>
+                                            <div class="radio-group">
+                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                    <input type="checkbox" id="washing" name="washing" value="Bike">
+                                                    <label for="washing"> Washing Machine</label><br>
+                                                </div>
+                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                    <input type="checkbox" id="microwave" name="microwave" value="Bike">
+                                                    <label for="microwave"> Microwave</label><br>
+                                                </div>
+                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                    <input type="checkbox" id="oven" name="oven" value="Bike">
+                                                    <label for="oven"> Oven</label><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Tiles</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="normaltiles" name="normaltiles" value="Bike">
+                                                <label for="normaltiles"> Normal White Tiles</label><br>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="marble" name="marble" value="Bike">
+                                                <label for="marble"> Marble</label><br>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="tiles" name="tiles" value="Bike">
+                                                <label for="tiles"> Vitrified Tiles</label><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h2><span class="required">*</span> Safety</h2>
+                                        <div class="radio-group">
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="security" name="security" value="Bike">
+                                                <label for="security"> 24/7 Security personel (Gated
+                                                    Security)</label><br>
+                                            </div>
+                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                                <input type="checkbox" id="cctv" name="cctv" value="Bike">
+                                                <label for="cctv"> Security Systems- CCTV</label><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" style="padding-bottom: 30px;">
+                                        <h2>SOCIETY AMENITIES</h2>
+                                        <div class="grid">
+                                            <div class="item">
+                                                <div class="icon">👮</div>
+                                                <div class="label">24/7 Security</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">📹</div>
+                                                <div class="label">CCTV Camera</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🛗</div>
+                                                <div class="label">Lift</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🚗</div>
+                                                <div class="label">Reserved Parking</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">💧</div>
+                                                <div class="label">Regular water supply</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🔌</div>
+                                                <div class="label">Power Back up-Partial</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🔋</div>
+                                                <div class="label">Power Back up-Full</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🧹</div>
+                                                <div class="label">Maintenance staff</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🌳</div>
+                                                <div class="label">Garden/ Park</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🎠</div>
+                                                <div class="label">Kids Play area</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏓</div>
+                                                <div class="label">Sport</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏋️</div>
+                                                <div class="label">Property Gym</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏛️</div>
+                                                <div class="label">Community Hall</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🛒</div>
+                                                <div class="label">Shopping center</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏠</div>
+                                                <div class="label">Club House</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏊</div>
+                                                <div class="label">Swimming pool</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🔊</div>
+                                                <div class="label">Intercom</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🚒</div>
+                                                <div class="label">Fire Safety</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏠</div>
+                                                <div class="label">Club House</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="icon">🏊</div>
+                                                <div class="label">Swimming pool</div>
+                                                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-details">
+                            Need Help? Call 9999999999
+                            <button type="button" onclick="nextSection()">NEXT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="content">
+                        <div class="property-details">
+                            <form>
+                                <div class="form-detail">
+                                    <div class="row-form-group">
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Rent <span class="required">*</span></h2>
+                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                        </div>
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Security <span class="required">*</span></h2>
+                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                        </div>
+                                    </div>
+                                    <div class="row-form-group">
+                                        <div class="form-group" style="width: 380px;">
+                                            <h2>Maintenance <span class="required">*</span></h2>
+                                            <select id="direction" name="direction">
+                                                <option value="">Maintenance</option>
+                                                <option value="include">Included in Rent</option>
+                                                <option value="Extra">Extra Maintenance</option>
+                                            </select>
+                                        </div>
+                                        <div class="row-form-group" style="width: 380px;">
+                                            <div class="form-group" style="width: 170px;">
+                                                <h2>Maintenance <span class="required">*</span></h2>
+                                                <input type="text" id="name" name="name" value="Celeste" required>
+                                            </div>
+                                            <div class="form-group" style="width: 170px;">
+                                                <select id="direction" name="maintenance">
+                                                    <option value="">Monthly</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group" style="padding-bottom: 30px;">
+                                            <h2>Additional Pricing details to convey to agent? <span
+                                                    class="required">*</span></h2>
+                                            <input type="message" id="description" name="message" value=""
+                                                placeholder="Do you have any concerns regarding pricing of your property? Add your concerns here or call us."
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-details">
+                            Need Help? Call 9999999999
+                            <button type="button" onclick="nextSection()">NEXT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="content">
+                        <div class="property-details">
+                            <form>
+                                <div class="form-detail">
+                                    <div class="form-group" style="padding-bottom: 30px;">
+                                        <h2>Add Photos / videos to attract more tenants!</h2>
+                                        <p>Add Photos of living room, bedroom, bathroom, floor, doors, kitchen, balcony,
+                                            location map, neighborhood,</p>
+                                        <div class="add-photos-button">
+                                            <!-- Icon would be added here if available -->
+                                            <button onclick="document.getElementById('fileInput').click()">+ Add Photos
+                                                Now</button>
+                                            <input type="file" id="fileInput" hidden multiple />
+                                        </div>
+                                        <p>OR</p>
+                                        <p>We can upload them for you! You can email the pictures and videos to us at
+                                            Dylanestate.com.</p>
+                                        <small>Accepted formats are .jpg, .gif, .bmp & .png. Maximum size allowed is 20
+                                            MB. Minimum dimension allowed:
+                                            600x400 pixels.</small>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-details">
+                            Need Help? Call 9999999999
+                            <button class="save-post-button" style="padding-left: 0; padding-right: 0;"
+                                type="button">SAVE&POST</button>
+                        </div>
+
+                    </div>
+                    <div class="popup" id="uploadPopup" style="">
+                        <div class="popup-container">
+                            <div class="form-group" style="align-items: center;">
+                                <h4 style="width: 80%;">POST PROPERTY ON DYLAN ESTATE?<span class="required">*</span></h4>
+                                <button type="button" style=" background-color: #1a2b47; width: 80%;"><a
+                                        style="text-decoration: none; color: white;"
+                                        href="./thank.html">Continue</a></button>
+                                <small><p>By continuing you agree to our Terms and Conditions & Privacy Policy</p></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const addPhotosButton = document.querySelector('.save-post-button');
+        const uploadPopup = document.getElementById('uploadPopup');
+
+        addPhotosButton.addEventListener('click', () => {
+            uploadPopup.style.display = 'block';
+        });
+    </script>
+    <script>
+        function toggleCheckbox(element) {
+            element.classList.toggle('checked');
+        }
+    </script>
+    <script>
+        document.querySelectorAll('.option').forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove 'selected' class from all buttons in the same container
+                this.parentNode.querySelectorAll('.option').forEach(btn => {
+                    btn.classList.remove('selected');
+                });
+                // Add 'selected' class to clicked button
+                this.classList.add('selected');
+            });
+        });
+    </script>
+    <script>
+        let currentSection = 0;
+        const sections = document.querySelectorAll('.section');
+        const progressBar = document.getElementById('progress-bar');
+        const totalSteps = sections.length + 1;
+
+        function nextSection() {
+            if (currentSection < totalSteps - 1) {
+                currentSection++;
+                updateSlider();
+                updateProgressBar();
+            }
+        }
+
+        function updateSlider() {
+            sections.forEach((section, index) => {
+                section.classList.remove('active');
+                if (index === currentSection) {
+                    section.classList.add('active');
+                }
+            });
+        }
+
+        function updateProgressBar() {
+            const completedPercentage = (currentSection / (totalSteps - 1)) * 100;
+            progressBar.style.width = `${completedPercentage}%`;
+
+            for (let i = 0; i <= currentSection; i++) {
+                document.getElementById(`step-${i}`).classList.add('completed');
+            }
+        }
+    </script>
+</body>
+
+</html>

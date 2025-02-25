@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -17,68 +18,80 @@
             <div class="header-nav">
                 <nav>
                     <ul>
-                        <div><a href="#">PROPERTIES</a></div>
-                        <div><a href="#">MY DASHBOARD/ACTIVITY</a></div>
-                        <div><a href="#">LIST YOUR PROPERTY</a></div>
-                        <div><a href="#">CONTACT US</a></div>
-                        <div><a href="#">MORE</a></div>
+                        <li>
+                            <h1><a href="#" title="Properties"><i class="bi bi-house-gear-fill"></i></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#" title="Activity"><i class="bi bi-activity"></i></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#" title="Property-list"><i class="bi bi-list-stars"></i></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#" title="contact"><i class="bi bi-person-rolodex"></i></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#" title="more"><i class="bi bi-three-dots"></i></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#" title="ln"><i class="bi bi-globe"></i></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="#" title="user"><i class="bi bi-person-circle"></i></a></h1>
+                        </li>
                     </ul>
                 </nav>
-                <div>|</div>
-                <div class="user-actions">
-                    <a href="#" class="language-icon">🌐</a>
-                    <a href="#" class="user-icon">👤</a>
-                </div>
             </div>
         </header>
 
         <main>
-            <h1>Sell or Rent your Property For Free</h1>
-            <p>Whether you're ready to sell or looking for answers, we'll guide you with data and expertise specific to
-                your needs.</p>
-            <div class="content-wrapper">
+            <div class="heading">
+                <h1>Sell or Rent your Property For Free</h1>
+                <p>Whether you're ready to sell or looking for answers, we'll guide you with data and expertise specific
+                    to
+                    your needs.</p>
+            </div>
                 <div class="property">
                     <div class="steps">
-                        <div>
                             <h2>Upload your property in 4 simple steps</h2>
                             <ul>
-                                <div class="li"><img src="assets/right.png" alt="tick right" width="40px"
-                                        height="40px">Add your properties Basic Details</div>
-                                <div class="li"><img src="assets/right.png" alt="tick right" width="40px"
-                                        height="40px">Add property Location</div>
-                                <div class="li"><img src="assets/right.png" alt="tick right" width="40px"
-                                        height="40px">Add property Features and amenities</div>
-                                <div class="li"><img src="assets/right.png" alt="tick right" width="40px"
-                                        height="40px">Add Price details</div>
-                                <div class="li"><img src="assets/right.png" alt="tick right" width="40px"
-                                        height="40px">Add your best Property Shots</div>
+                                <li><img src="assets/right.png" alt="tick right" width="40px"
+                                        height="40px">Add your properties Basic Details</li>
+                                <li><img src="assets/right.png" alt="tick right" width="40px"
+                                        height="40px">Add property Location</li>
+                                <li><img src="assets/right.png" alt="tick right" width="40px"
+                                        height="40px">Add property Features and amenities</li>
+                                <li><img src="assets/right.png" alt="tick right" width="40px"
+                                        height="40px">Add Price details</li>
+                                <li><img src="assets/right.png" alt="tick right" width="40px"
+                                        height="40px">Add your best Property Shots</li>
                             </ul>
-                        </div>
                     </div>
+
                     <div class="form active" id="details-form">
                         <div class="form-heading">
                             <h2>LETS GET YOU STARTED!</h2>
                         </div>
                         <form>
                             <div class="form-group">
-                                <label>* I am :</label>
+                                <p><span>*</span> I am :</p>
                                 <div class="radio-group">
-                                    <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                    <div class="radio">
                                         <input type="radio" id="owner" name="userType" checked>
                                         <label for="owner">Owner</label>
                                     </div>
-                                    <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                    <div class="radio">
                                         <input type="radio" id="builder" name="userType">
                                         <label for="builder">Builder</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Your Name *</label>
-                                <input type="text" id="name" name="name" value="Celeste" required>
+                                <label for="name">Your Name <span>*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Celeste" required>
                             </div>
                             <div class="form-group">
-                                <label for="country">Country *</label>
+                                <label for="country">Country <span>*</span></label>
                                 <select id="country" name="country" required>
                                     <option value="">Select Country</option>
                                     <option value="us">United States</option>
@@ -86,13 +99,13 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone *</label>
-                                <input type="tel" id="phone" name="phone" value="999-999-9999" required>
+                                <label for="phone">Phone <span>*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="999-999-9999" required>
                             </div>
-                            <h4 style="padding-left: 77px;">OR</h4>
+                            <h4>OR</h4>
                             <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" value="celeste@example.com" required>
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="celeste@example.com" required>
                             </div>
                         </form>
                         <div class="footer">
@@ -108,24 +121,22 @@
                             <h2>LETS GET YOU STARTED!</h2>
                         </div>
                         <div class="form-group-otp">
-                            <div class="otp">
+                            <div class="otp-heading">
                                 <label>Enter OTP sent on 999-999-9999</label>
                                 <a href="#">Change</a>
                             </div>
-                            <div style="width: 362px; margin-left: 20px;">
-                                <input type="text" id="otp-input" class="otp-placeholder" readonly>
+                            <div class="otp">
+                                <input type="text" id="otp-input" class="otp-placeholder" title="otp" readonly>
                             </div>
                         </div>
                         <div class="footer">
                             <div class="footer-details">
                                 Need Help? Call 9999999999
-                                <button type="submit"><a style="color: white; text-decoration: none"
-                                        href="property.html">NEXT</a></button>
+                                <a href="property.html">NEXT</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </main>
     </div>
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="property.css">
 </head>
 
@@ -15,19 +16,30 @@
         </div>
         <div class="header-nav">
             <nav>
-                <ul class="nav-list">
-                    <div><a href="#">PROPERTIES</a></div>
-                    <div><a href="#">MY DASHBOARD/ACTIVITY</a></div>
-                    <div><a href="#">LIST YOUR PROPERTY</a></div>
-                    <div><a href="#">CONTACT US</a></div>
-                    <div><a href="#">MORE</a></div>
+                <ul>
+                    <li>
+                        <h1><a href="#" title="Properties"><i class="bi bi-house-gear-fill"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="Activity"><i class="bi bi-activity"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="Property-list"><i class="bi bi-list-stars"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="contact"><i class="bi bi-person-rolodex"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="ln"><i class="bi bi-globe"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="user"><i class="bi bi-person-circle"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="more"><i class="bi bi-three-dots"></i></a></h1>
+                    </li>
                 </ul>
             </nav>
-            <div>|</div>
-            <div class="user-actions">
-                <a href="#" class="language-icon">🌐</a>
-                <a href="#" class="user-icon">👤</a>
-            </div>
         </div>
     </header>
 
@@ -36,11 +48,11 @@
             <div class="form-heading">
                 <div class="property-details">
                     <ul class="list">
-                        <ul id="step-0">Property Details</ul>
-                        <ul id="step-1">Location Details</ul>
-                        <ul id="step-2">Features & Amenities</ul>
-                        <ul id="step-3">Price Details</ul>
-                        <ul id="step-4">Property Images</ul>
+                        <li id="step-0">Property Details</li>
+                        <li id="step-1">Location Details</li>
+                        <li id="step-2">Features & Amenities</li>
+                        <li id="step-3">Price Details</li>
+                        <li id="step-4">Property Images</li>
                     </ul>
                     <div class="progress-bar" id="progress-bar"></div>
                 </div>
@@ -54,11 +66,11 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Property For :</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="owner" name="userType" checked>
                                                 <label for="owner">Rent</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="builder">Sale</label>
                                             </div>
@@ -67,15 +79,15 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Property Type :</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="owner" name="userType" checked>
                                                 <label for="owner">Residential</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="builder">Commercial</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="builder">Land / Plot</label>
                                             </div>
@@ -84,22 +96,22 @@
                                     <div class="row-form-group">
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Built up Area <span class="required">*</span></h2>
-                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                            <input type="text" id="name" name="name" placeholder="Celeste" required>
                                         </div>
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Carpet Area <span class="required">*</span></h2>
-                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                            <input type="text" id="name" name="name" placeholder="Celeste" required>
                                         </div>
                                     </div>
                                     <div class="row-form-group">
                                         <div class="row-form-group" style="width: 380px;">
                                             <div class="form-group" style="width: 170px;">
                                                 <h2>Property on Floor <span class="required">*</span></h2>
-                                                <input type="text" id="name" name="name" value="Celeste" required>
+                                                <input type="text" id="name" name="name" placeholder="Celeste" required>
                                             </div>
                                             <div class="form-group" style="width: 170px;">
                                                 <h2>Total Floors <span class="required">*</span></h2>
-                                                <input type="text" id="name" name="name" value="Celeste" required>
+                                                <input type="text" id="name" name="name" placeholder="Celeste" required>
                                             </div>
                                         </div>
                                         <div class="form-group" style="width: 380px;">
@@ -181,10 +193,10 @@
                                             <button type="button" class="option">6+</button>
                                         </div>
                                     </div>
-                                    <div class="form-group" style="padding-bottom: 30px;">
+                                    <div class="form-group">
                                         <h2>Property Description <span class="required">*</span></h2>
-                                        <input type="message" id="description" name="message" value=""
-                                            placeholder="Describe your property...." required>
+                                        <textarea name="message" id="property-description" rows="5" title="description"
+                                            placeholder="Describe your property...."></textarea>
                                     </div>
                                 </div>
                             </form>
@@ -205,13 +217,13 @@
                                     <div class="row-form-group">
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Building / Society Name <span class="required">*</span></h2>
-                                            <select id="direction" name="direction">
+                                            <select id="building" name="building">
                                                 <option value="">Gokul Village Chs 2</option>
                                             </select>
                                         </div>
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Locality / Area <span class="required">*</span></h2>
-                                            <select id="direction" name="direction">
+                                            <select id="locality" name="locality">
                                                 <option value="">Shanti Park, Miraroad east</option>
                                             </select>
                                         </div>
@@ -219,20 +231,20 @@
                                     <div class="row-form-group">
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Landmark / Street Name</h2>
-                                            <select id="direction" name="direction">
+                                            <select id="landmark" name="landmark">
                                                 <option value="">Prominent Landmark</option>
                                             </select>
                                         </div>
                                         <div class="form-group" style="width: 380px;">
                                             <h2>City</h2>
-                                            <select id="direction" name="direction">
+                                            <select id="city" name="city">
                                                 <option value="">Mumbai, Maharashtra</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group" style="padding-bottom: 30px;">
+                                    <div class="form-group">
                                         <h2>Mark Locality on Map</h2>
-                                        <img width="900px" src="assets/map_1.png" alt="">
+                                        <img src="assets/map_1.png" alt="map">
                                     </div>
                                 </div>
                             </form>
@@ -253,11 +265,11 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Non-Veg</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="owner" name="userType" checked>
                                                 <label for="allowed">Allowed</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="notallowed">Not Allowed</label>
                                             </div>
@@ -266,11 +278,11 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Pets Allowed</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="owner" name="userType" checked>
                                                 <label for="yes">Yes</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="no">No</label>
                                             </div>
@@ -279,11 +291,11 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Electricity</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="owner" name="userType" checked>
                                                 <label for="rare">Rare/No Powercut</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="frequent">Frequent Powercut</label>
                                             </div>
@@ -292,15 +304,15 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Water Supply</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="owner" name="userType" checked>
                                                 <label for="bmc">Municipal Corporation (BMC)</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="borewell">Borewell</label>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
+                                            <div class="rent-sale">
                                                 <input type="radio" id="builder" name="userType">
                                                 <label for="both">Both</label>
                                             </div>
@@ -309,16 +321,16 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Furnishing</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="fully" name="fully" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="fully" name="fully">
                                                 <label for="fully"> Fully Furnished</label><br>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="semi" name="semi" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="semi" name="semi">
                                                 <label for="semi"> Semi Furnished</label><br>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="unfurnished" name="unfurnished" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="unfurnished" name="unfurnished">
                                                 <label for="unfurnished"> Unfurnished</label><br>
                                             </div>
                                         </div>
@@ -327,31 +339,30 @@
                                         <h2><span class="required">*</span> Additional Features</h2>
                                         <div class="form-group" style="row-gap: 20px; padding-top: 0;">
                                             <div class="radio-group">
-                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                    <input type="checkbox" id="ac" name="ac" value="Bike">
+                                                <div class="rent-sale">
+                                                    <input type="checkbox" id="ac" name="ac">
                                                     <label for="ac"> Air Conditioning</label><br>
                                                 </div>
-                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                    <input type="checkbox" id="fans" name="fans" value="Bike">
+                                                <div class="rent-sale">
+                                                    <input type="checkbox" id="fans" name="fans">
                                                     <label for="fans"> Ceiling Fans</label><br>
                                                 </div>
-                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                    <input type="checkbox" id="refrigerator" name="refrigerator"
-                                                        value="Bike">
+                                                <div class="rent-sale">
+                                                    <input type="checkbox" id="refrigerator" name="refrigerator">
                                                     <label for="refrigerator"> Refrigerator</label><br>
                                                 </div>
                                             </div>
                                             <div class="radio-group">
-                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                    <input type="checkbox" id="washing" name="washing" value="Bike">
+                                                <div class="rent-sale">
+                                                    <input type="checkbox" id="washing" name="washing">
                                                     <label for="washing"> Washing Machine</label><br>
                                                 </div>
-                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                    <input type="checkbox" id="microwave" name="microwave" value="Bike">
+                                                <div class="rent-sale">
+                                                    <input type="checkbox" id="microwave" name="microwave">
                                                     <label for="microwave"> Microwave</label><br>
                                                 </div>
-                                                <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                    <input type="checkbox" id="oven" name="oven" value="Bike">
+                                                <div class="rent-sale">
+                                                    <input type="checkbox" id="oven" name="oven">
                                                     <label for="oven"> Oven</label><br>
                                                 </div>
                                             </div>
@@ -360,16 +371,16 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Tiles</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="normaltiles" name="normaltiles" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="normaltiles" name="normaltiles">
                                                 <label for="normaltiles"> Normal White Tiles</label><br>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="marble" name="marble" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="marble" name="marble">
                                                 <label for="marble"> Marble</label><br>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="tiles" name="tiles" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="tiles" name="tiles">
                                                 <label for="tiles"> Vitrified Tiles</label><br>
                                             </div>
                                         </div>
@@ -377,18 +388,18 @@
                                     <div class="form-group">
                                         <h2><span class="required">*</span> Safety</h2>
                                         <div class="radio-group">
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="security" name="security" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="security" name="security">
                                                 <label for="security"> 24/7 Security personel (Gated
                                                     Security)</label><br>
                                             </div>
-                                            <div style="display: flex; align-items: baseline; column-gap: 10px;">
-                                                <input type="checkbox" id="cctv" name="cctv" value="Bike">
+                                            <div class="rent-sale">
+                                                <input type="checkbox" id="cctv" name="cctv">
                                                 <label for="cctv"> Security Systems- CCTV</label><br>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group" style="padding-bottom: 30px;">
+                                    <div class="form-group">
                                         <h2>SOCIETY AMENITIES</h2>
                                         <div class="grid">
                                             <div class="item">
@@ -512,11 +523,11 @@
                                     <div class="row-form-group">
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Rent <span class="required">*</span></h2>
-                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                            <input type="text" id="name" name="name" placeholder="Celeste" required>
                                         </div>
                                         <div class="form-group" style="width: 380px;">
                                             <h2>Security <span class="required">*</span></h2>
-                                            <input type="text" id="name" name="name" value="Celeste" required>
+                                            <input type="text" id="name" name="name" placeholder="Celeste" required>
                                         </div>
                                     </div>
                                     <div class="row-form-group">
@@ -531,7 +542,7 @@
                                         <div class="row-form-group" style="width: 380px;">
                                             <div class="form-group" style="width: 170px;">
                                                 <h2>Maintenance <span class="required">*</span></h2>
-                                                <input type="text" id="name" name="name" value="Celeste" required>
+                                                <input type="text" id="name" name="name" placeholder="Celeste" required>
                                             </div>
                                             <div class="form-group" style="width: 170px;">
                                                 <select id="direction" name="maintenance">
@@ -541,12 +552,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="form-group" style="padding-bottom: 30px;">
+                                        <div class="form-group">
                                             <h2>Additional Pricing details to convey to agent? <span
                                                     class="required">*</span></h2>
-                                            <input type="message" id="description" name="message" value=""
-                                                placeholder="Do you have any concerns regarding pricing of your property? Add your concerns here or call us."
-                                                required>
+                                            <textarea name="message" id="pricing-details" rows="5"
+                                                placeholder="Do you have any concerns regarding pricing of your property? Add your concerns here or call us."></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -565,7 +575,7 @@
                         <div class="property-details">
                             <form>
                                 <div class="form-detail">
-                                    <div class="form-group" style="padding-bottom: 30px;">
+                                    <div class="form-group">
                                         <h2>Add Photos / videos to attract more tenants!</h2>
                                         <p>Add Photos of living room, bedroom, bathroom, floor, doors, kitchen, balcony,
                                             location map, neighborhood,</p>
@@ -589,19 +599,17 @@
                     <div class="footer">
                         <div class="footer-details">
                             Need Help? Call 9999999999
-                            <button class="save-post-button" style="padding-left: 0; padding-right: 0;"
-                                type="button">SAVE&POST</button>
+                            <button class="save-post-button" type="button">SAVE&POST</button>
                         </div>
 
                     </div>
-                    <div class="popup" id="uploadPopup" style="">
+                    <div class="popup" id="uploadPopup">
                         <div class="popup-container">
                             <div class="form-group" style="align-items: center;">
-                                <h4 style="width: 80%;">POST PROPERTY ON DYLAN ESTATE?<span class="required">*</span>
-                                </h4>
-                                <button type="button" style=" background-color: #1a2b47; width: 80%;"><a
-                                        style="text-decoration: none; color: white;"
-                                        href="thank.html">Continue</a></button>
+                                <h4>POST PROPERTY ON DYLAN ESTATE?<span class="required">*</span></h4>
+                                <button type="button" id="btn" class="btn">
+                                    <a href="thank.html">Continue</a>
+                                </button>
                                 <small>
                                     <p>By continuing you agree to our Terms and Conditions & Privacy Policy</p>
                                 </small>
@@ -628,11 +636,9 @@
     <script>
         document.querySelectorAll('.option').forEach(button => {
             button.addEventListener('click', function () {
-                // Remove 'selected' class from all buttons in the same container
                 this.parentNode.querySelectorAll('.option').forEach(btn => {
                     btn.classList.remove('selected');
                 });
-                // Add 'selected' class to clicked button
                 this.classList.add('selected');
             });
         });
@@ -642,6 +648,8 @@
         const sections = document.querySelectorAll('.section');
         const progressBar = document.getElementById('progress-bar');
         const totalSteps = sections.length + 1;
+
+        updateProgressBar();
 
         function nextSection() {
             if (currentSection < totalSteps - 1) {
@@ -661,7 +669,8 @@
         }
 
         function updateProgressBar() {
-            const completedPercentage = (currentSection / (totalSteps - 1)) * 100;
+            let completedPercentage = (currentSection / (totalSteps - 1)) * 100;
+            completedPercentage += 20;
             progressBar.style.width = `${completedPercentage}%`;
 
             for (let i = 0; i <= currentSection; i++) {

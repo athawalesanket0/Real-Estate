@@ -10,14 +10,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: #FCF8F4;
+    background-color: white;
     text-decoration: none;
-    padding: 16px 32px 0 32px;
+    padding: 0 50px;
 }
 
-nav {
-    display: flex;
+.logo img {
+    width: 150px;
 }
 
 .header-nav {
@@ -29,8 +28,8 @@ nav {
 ul {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    padding: 0;
+    gap: 50px;
+    list-style: none;
 }
 
 ul a {
@@ -67,5 +66,4 @@ ul a {
     font-weight: 400;
     line-height: 19.36px;
     text-align: left;
-
 }

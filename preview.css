@@ -9,14 +9,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: #FCF8F4;
+    background-color: white;
     text-decoration: none;
-    padding: 16px 32px 0 32px;
+    padding: 0 50px;
 }
 
-nav {
-    display: flex;
+.logo img {
+    width: 150px;
 }
 
 .header-nav {
@@ -28,8 +27,8 @@ nav {
 ul {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding: 0;
+    gap: 50px;
+    list-style: none;
 }
 
 ul a {
@@ -48,8 +47,11 @@ ul a {
     background: #FCF8F4;
     border-radius: 8px;
     width: 427px;
-    height: 527px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry {
+    height: 527px;
 }
 
 .preview-detail {
@@ -64,9 +66,13 @@ ul a {
 
 .icons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 20px;
     align-items: baseline;
+}
+
+.search-container input {
+    height: 30px;
 }
 
 .contact {
@@ -160,7 +166,7 @@ ul a {
 .show-more {
     text-decoration: underline;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     -webkit-text-fill-color: #000;
 }
 
@@ -245,8 +251,7 @@ button {
 
 .about-section {
     font-family: Arial, sans-serif;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+    padding: 20px 70px;
 }
 
 .about-section h2 {
@@ -262,17 +267,9 @@ button {
 .about-section .show-more {
     cursor: pointer;
     border: none;
-    padding-left: 0;
     text-decoration: underline;
     font-size: 16px;
-    margin-right: 10px;
     outline: none;
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .button-a {
@@ -297,7 +294,6 @@ button {
 }
 
 .footer-section {
-    margin-top: 50px;
     background: #1c3b63;
     color: white;
 }
@@ -308,8 +304,12 @@ button {
 
 .footer {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+.footer img {
+    width: 150px;
 }
 
 .footer-tags {
@@ -328,4 +328,9 @@ button {
 .inquiry-form {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.footer-section p {
+    text-align: center;
+    padding-bottom: 10px;
 }

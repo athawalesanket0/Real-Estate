@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preview</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="preview.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img width="105px" height="48px" src="assets/logo.png" alt="Dylan Estate">
-            
+            <img src="assets/logo.png" alt="Dylan Estate">
         </div>
         <div class="header-nav">
             <nav>
-                <ul class="nav-list">
-                    <div><a href="#">ALLPROPERTIES</a></div>
-                    <div><a href="#">WISHLIST</a></div>
-                    <div><a href="#">SAVED SEARCH</a></div>
-                    <div><a href="#">LIST YOUR PROPERTY</a></div>
-                    <div><a href="#">MORE</a></div>
+                <ul>
+                    <li>
+                        <h1><a href="#" title="Properties"><i class="bi bi-house-gear-fill"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="Activity"><i class="bi bi-activity"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="Property-list"><i class="bi bi-list-stars"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="contact"><i class="bi bi-person-rolodex"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="ln"><i class="bi bi-globe"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="user"><i class="bi bi-person-circle"></i></a></h1>
+                    </li>
+                    <li>
+                        <h1><a href="#" title="more"><i class="bi bi-three-dots"></i></a></h1>
+                    </li>
                 </ul>
             </nav>
-            <div>|</div>
-            <div class="user-actions">
-                <a href="#" class="language-icon">🌐</a>
-                <a href="#" class="user-icon">👤</a>
-            </div>
         </div>
     </header>
     <div class="preview">
@@ -36,11 +49,12 @@
                     <div class="heading">
                         <h2>1 BHK Flat / Apartment For Rent in Gokul Village Chs 2 (545 Sq.ft.)</h2>
                         <div class="icon-heading">
-                        <p><span class="location">📍</span>Gokul village chs 2 Shanti Park, near St. Xavious High school</p>
-                        <div class="icons">
-                            <span class="heart-icon">❤️</span>
-                            <span class="share-icon">Share</span>
-                        </div>
+                            <p><span class="location">📍</span>Gokul village chs 2 Shanti Park, near St. Xavious High
+                                school</p>
+                            <div class="icons">
+                                <span class="heart-icon">❤️</span>
+                                <span class="share-icon">Share</span>
+                            </div>
                         </div>
                     </div>
                     <div class="photo-gallery">
@@ -48,7 +62,7 @@
                     </div>
                 </div>
                 <div class="property-overview">
-                    <div class="form-group" style="padding-bottom: 30px;">
+                    <div class="form-group">
                         <h2>Property Overview</h2>
                         <div class="grid">
                             <div class="item">
@@ -127,7 +141,7 @@
                     </div>
                 </div>
                 <div class="amenities-overview">
-                    <div class="form-group" style="padding-bottom: 30px;">
+                    <div class="form-group">
                         <h2>Amenities</h2>
                         <div class="grid amenities-grid">
                             <div class="item">
@@ -180,20 +194,20 @@
                         stores
                         is very
                         easy & convenient from this house.
-    
+
                         If you are a frequent traveller, then you'll be happy to note that the train station is less
                         than 10
                         minutes
                         from this house. With PVR Cinemas - Mira Road, Maxus Cinemas & INOX close by, you can catch your
                         favourite
                         movies running & never worry about missing a show because of traffic.
-    
+
                         Never miss out on lifestyle as Rassaz Mall...
                     </div>
                     <div class="show-more">Show more</div>
                 </div>
             </div>
-            <div class="property-section">
+            <div class="property-section inquiry">
                 <div class="contact">
                     <div class="price-tags">
                         <span>₹ 20,000 / Month</span>
@@ -230,17 +244,19 @@
             <div class="property-image">
                 <div class="header">
                     <h1>Explore Neighborhood</h1>
-                    <div class="icons" style="justify-content: space-evenly;">
+                    <div class="icons">
                         <p><span class="heart-icon">❤️</span> Gokul village chs 2</p>
-                        <input type="text" name="search" id="search">
-                        <button><span class="share-icon">Search</span></button>
+                        <div class="search-container">
+                            <input type="text" name="search" id="search"placeholder="search">
+                            <button><span class="share-icon">Search</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="photo-gallery">
                     <img src="assets/map.jpeg" alt="">
                 </div>
             </div>
-            <div class="property-section">
+            <div class="property-section"> 
                 <div class="price-tags">
                     <span>Transport</span>
                     <span>Esssentials</span>
@@ -277,9 +293,12 @@
         <div class="about">
             <div class="about-section">
                 <h2>About Miraroad</h2>
-                <p>Spread over 510 sqft, this home is an ideal place to live in. Access to bus station & medical stores is very easy
-                    & convenient from this house. If you are a frequent traveler, then you'll be happy to note that the train
-                    station is less than 10 minutes away. With PVR Cinemas - Mira Road, Maxus Cinemas & INOX close by, you can catch
+                <p>Spread over 510 sqft, this home is an ideal place to live in. Access to bus station & medical stores
+                    is very easy
+                    & convenient from this house. If you are a frequent traveler, then you'll be happy to note that the
+                    train
+                    station is less than 10 minutes away. With PVR Cinemas - Mira Road, Maxus Cinemas & INOX close by,
+                    you can catch
                     your favorite movies running & never worry about missing a show because of traffic.</p>
                 <div class="button-a">
                     <a class="show-more">Show more</a>
@@ -289,36 +308,39 @@
         </div>
         <div class="footer-section">
             <div class="footer">
-            <img width="225px" height="100px" src="assets/footer-logo.png" alt="">
-            <div class="footer-tags">
-            <div class="footer-links">
-                <p>HOME</p>
-                <p>PROPERTIES</p>
-                <p>LIST YOUR PROPERTY</p>
-                <p>SAVED SEARCHES</p>
+                <div class="footer-img">
+                    <img src="assets/footer-logo.png" alt="footer-logo">
+                </div>
+                <div class="footer-tags">
+                    <div class="footer-links">
+                        <p>HOME</p>
+                        <p>PROPERTIES</p>
+                        <p>LIST YOUR PROPERTY</p>
+                        <p>SAVED SEARCHES</p>
+                    </div>
+                    <div class="footer-links">
+                        <p>ABOUT MIRA ROAD</p>
+                        <p>EMI CALCULATOR</p>
+                        <p>TESTAMONIALS</p>
+                        <p>EXPLORE NEIGHBORHOOD</p>
+                    </div>
+                    <div class="footer-links">
+                        <p>ABOUT US</p>
+                        <p>CONTACT US</p>
+                        <p>FAQ'S</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <h2>CONTACT US</h2>
+                    <p>B/28, Shop No 1, Madhukar Co Op Housing Society, Sector 5, Shanti</p>
+                    <h2>OFFICE HOURS</h2>
+                    <p>B/28, Shop No 1, Madhukar Co Op Housing Society, Sector 5, Shanti</p>
+                </div>
             </div>
-            <div class="footer-links">
-                <p>ABOUT MIRA ROAD</p>
-                <p>EMI CALCULATOR</p>
-                <p>TESTAMONIALS</p>
-                <p>EXPLORE NEIGHBORHOOD</p>
-            </div>
-            <div class="footer-links">
-                <p>ABOUT US</p>
-                <p>CONTACT US</p>
-                <p>FAQ'S</p>
-            </div>
-            </div>
-            <div class="address">
-                <h2>CONTACT US</h2>
-                <p>B/28, Shop No 1, Madhukar Co Op Housing Society, Sector 5, Shanti</p>
-                <h2>OFFICE HOURS</h2>
-                <p>B/28, Shop No 1, Madhukar Co Op Housing Society, Sector 5, Shanti</p>
-            </div>
-            </div>
-            <hr>
-            <p style="text-align: center;">@2024 Dylan Estate</p>
+            <br>
+            <p>@2024 Dylan Estate</p>
         </div>
     </div>
 </body>
+
 </html>
